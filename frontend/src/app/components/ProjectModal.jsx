@@ -1,9 +1,34 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/components/ProjectModal.module.css';
 
 export default function ProjectModal({ project, onClose }) {
+  // Thumbnails / alternatives should come only from `project.images` (if provided)
+  const thumbnails = Array.isArray(project.images) ? project.images.filter(Boolean) : [];
+  // Selected main image shown in modal. Start with the first of `project.images` if present,
+  // otherwise fall back to `project.image`.
+  const [selectedImage, setSelectedImage] = useState(
+    (thumbnails.length > 0 ? thumbnails[0] : (project.image || ''))
+  );
+  const [preferContain, setPreferContain] = useState(false);
+
+  const handleImageLoad = (e) => {
+    const { naturalWidth, naturalHeight } = e.target;
+    // If image is significantly taller than wide, prefer contain to avoid awkward top/bottom cropping
+    if (naturalHeight / naturalWidth > 1.15) {
+      setPreferContain(true);
+    } else {
+      setPreferContain(false);
+    }
+  };
+
+  // Reset selected image when project changes (so opening a new project shows the first image from `project.images` if available)
+  useEffect(() => {
+    setSelectedImage(thumbnails.length > 0 ? thumbnails[0] : (project.image || ''));
+    setPreferContain(false);
+  }, [project]);
+
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === 'Escape') {
@@ -42,11 +67,26 @@ export default function ProjectModal({ project, onClose }) {
         </button>
 
         <div className={styles.header}>
-          <img 
-            src={project.image} 
+          <img
+            src={selectedImage ? encodeURI(selectedImage) : ''}
             alt={project.title}
-            className={styles.headerImage}
+            className={`${styles.headerImage} ${preferContain ? styles.headerImageContain : ''}`}
+            onLoad={handleImageLoad}
           />
+
+          {thumbnails && thumbnails.length > 1 && (
+            <div className={styles.thumbnails}>
+              {thumbnails.map((img, idx) => (
+                <img
+                  key={idx}
+                  src={img ? encodeURI(img) : ''}
+                  alt={`${project.title} ${idx + 1}`}
+                  className={`${styles.thumbnail} ${selectedImage === img ? styles.thumbnailActive : ''}`}
+                  onClick={() => setSelectedImage(img)}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div className={styles.content}>

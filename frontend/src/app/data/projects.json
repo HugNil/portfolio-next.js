@@ -6,7 +6,7 @@
     "longDescription": "A portfolio site showcasing my projects and skills, built with Next.js. The site features a clean design, responsive layout, and easy navigation. It includes sections for my work, skills, and contact information.",
     "technologies": ["Next.js", "React", "JavaScript", "Responsive Design", "Framer motion", "CSS Modules", "App Router"],
     "image": "/Portfolio.PNG",
-    "images": ["/Portfolio.PNG"],
+    "images": ["/Portfolio.PNG", "/Skärmbild 2025-12-01 193438.png"],
     "liveUrl": "https://hugonilsson.vercel.app/",
     "repoUrl": "https://github.com/HugNil/portfolio-react",
     "features": [
@@ -23,8 +23,8 @@
     "description": "Fullstack web application simulating a clothing store.",
     "longDescription": "House 18 is a fullstack web application built as part of a university project during the course Full Stack Development - DA219B at Kristianstad University. The app simulates a modern clothing store with user authentication, a responsive shopping exprerience and admin product management.",
     "technologies": ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT", "CSS", "JavaScript"],
-    "image": "/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a63716e63686a6d2f696d6167652f75706c6f61642f76313734373232333935382f393273686f74735f736f5f79626530676f2e706e67.png",
-    "images": ["/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a63716e63686a6d2f696d6167652f75706c6f61642f76313734373232333935382f393273686f74735f736f5f79626530676f2e706e67.png"],
+    "image": "/Gemini_Generated_Image_qe0w81qe0w81qe0w.png",
+    "images": ["/Gemini_Generated_Image_qe0w81qe0w81qe0w.png", "/Gemini_Generated_Image_jctfexjctfexjctf.png", "/Gemini_Generated_Image_im5zlfim5zlfim5z.png", "/Gemini_Generated_Image_gse3cjgse3cjgse3.png"],
     "liveUrl": "https://house-18.vercel.app/",
     "repoUrl": "https://github.com/nickem00/house-18",
     "features": [
@@ -39,6 +39,27 @@
       "User Roles"
     ],
     "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"]
+  },
+  {
+    "id": "tryggatillsammans",
+    "title": "Trygga Tillsammans",
+    "description": "The goal of the application is to increase the public awareness and preparedness regarding Sweden's total defense duty.",
+    "longDescription": "Trygga Tillsammans is an Android application developed during the Mobile Application Development course. Its purpose is to increase public awareness and preparedness regarding Sweden's total defense duty. The app provides users with facts, checklists, quizzes, nearest shelters. It was a group project following agile workflows from concept to final product.",
+    "technologies": ["Kotlin", "Jetpack Compose", "Firebase", "Agile"],
+    "image": "/20251130_1540_Uppskalad Sverigesköld_remix_01kbak92gceqcatnkhpw7trn33.png",
+    "images": ["/Nytt projekt.png"],
+    "liveUrl": "",
+    "repoUrl": "",
+    "features": [
+      "User Authentication",
+      "Light/Dark Mode",
+      "Responsive Design",
+      "Informative Facts",
+      "Checklists for Preparedness",
+      "Quizzes to Test Knowledge",
+      "Nearest Shelters Locator"
+    ],
+    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr", "Ian Onamu", "Simon Persson"]
   },
   {
     "id": "solace",
@@ -82,8 +103,8 @@
     "description": "",
     "longDescription": "No more featured projects yet. Feel free to check out my GitHub in the meantime.",
     "technologies": [],
-    "image": "assets_task_01k193ds64e97a9242gfxx28fv_1753726149_img_0.webp",
-    "images": ["assets_task_01k193ds64e97a9242gfxx28fv_1753726149_img_0.webp"],
+    "image": "Nytt projekt (2).png",
+    "images": ["Nytt projekt (2).png"],
     "liveUrl": "",
     "repoUrl": "https://github.com/HugNil",
     "features": [],

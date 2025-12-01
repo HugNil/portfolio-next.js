@@ -2,10 +2,14 @@
 import styles from '../styles/components/ProjectCard.module.css';
 
 export default function ProjectCard({ project }) {
+  // Always use `project.image` for the overview card (even if `images` exists)
+  const cover = project.image || (project.images && project.images.length > 0 ? project.images[0] : '');
+  const encodedCover = cover ? encodeURI(cover) : '';
+
   return (
-    <div 
+    <div
       className={styles.card}
-      style={{ backgroundImage: `url(${project.image})` }}
+      style={{ backgroundImage: `url("${encodedCover}")` }}
     >
       <div className={styles.content}>
         <h3 className={styles.title}>{project.title}</h3>

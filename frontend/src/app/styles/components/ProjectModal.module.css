@@ -52,6 +52,11 @@
   position: relative;
 }
 
+/* ensure header area uses the primary background color so letterbox areas match the page */
+.header {
+  background-color: var(--color-bg-primary);
+}
+
 .headerImage {
   width: 100%;
   height: 400px;
@@ -59,6 +64,65 @@
   padding: 0rem;
   box-sizing: border-box;
 }
+
+.thumbnails {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 1rem 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap; /* single row */
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.75rem;
+}
+
+.thumbnail {
+  width: 96px; /* fixed thumbnail size to keep uniform layout */
+  height: 64px;
+  flex: 0 0 96px;
+  object-fit: cover; /* center-crop different aspect ratios */
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.95;
+  border: 2px solid rgba(255,255,255,0.06);
+  transition: transform 0.12s ease, opacity 0.12s ease, border-color 0.12s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+.thumbnail:hover {
+  transform: translateY(-3px) scale(1.02);
+  opacity: 1;
+}
+
+.thumbnailActive {
+  border-color: var(--color-accent);
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+/* Make sure main header image keeps a consistent aspect ratio */
+.headerImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
+  object-fit: cover; /* preserve center crop without stretching */
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+/* When an image is tall/portrait we use contain so important parts aren't cropped */
+.headerImageContain {
+  object-fit: contain !important;
+  background-color: var(--color-bg-primary);
+  display: block;
+}
+
+/* content spacing */
+/* keep consistent padding so thumbnails (now in-flow) don't overlap */
+/* .content defined later with padding: 2rem; */
 
 .title {
   font-size: 2rem;
