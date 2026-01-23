@@ -299,6 +299,11 @@ p, span, li {
   }
 }
 
+/* Hide hamburger menu when project modal is open */
+body.modal-open [class*="hamburger"] {
+  display: none !important;
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   img {
     image-rendering: -webkit-optimize-contrast;

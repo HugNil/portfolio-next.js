@@ -38,10 +38,12 @@ export default function ProjectModal({ project, onClose }) {
 
     document.addEventListener('keydown', handleEscape);
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('modal-open');
 
     return () => {
       document.removeEventListener('keydown', handleEscape);
       document.body.style.overflow = 'unset';
+      document.body.classList.remove('modal-open');
     };
   }, [onClose]);
 
