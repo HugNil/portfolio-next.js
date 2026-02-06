@@ -5,6 +5,20 @@ import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function MenuModal({ isOpen, onClose }) {
+  // Handle CV download with confirmation
+  const handleDownloadCV = (e) => {
+    e.preventDefault();
+    if (window.confirm('Do you want to download Hugo Nilssons CV?')) {
+      const link = document.createElement('a');
+      link.href = '/assets/Hugo Nilsson CV.pdf';
+      link.download = 'Hugo Nilsson CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+    onClose();
+  };
+
   // Close menu when pressing Escape key or clicking outside
   useEffect(() => {
     const handleEscKey = (e) => {
@@ -118,34 +132,43 @@ export default function MenuModal({ isOpen, onClose }) {
             >
               <ul>
                 {[
-                  { name: 'DOWNLOAD CV', href: '/resume' },
+                  { name: 'RESUMÉ', href: '/assets/Hugo Nilsson CV.pdf', download: true },
                   { name: 'GITHUB', href: 'https://github.com/hugnil', external: true },
                   { name: 'LINKEDIN', href: 'https://www.linkedin.com/in/hugo-nilsson-80b33621b/sv/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3BugARs1P5T3KZPyOfrkYEvQ%3D%3D', external: true },
                   { name: 'EMAIL', href: 'mailto:hugo.nilsson0002@gmail.com' }
                 ].map((item, index) => (
-                  <motion.li 
+                  <motion.li
                     key={item.name}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ 
+                    transition={{
                       delay: 0.1 + index * 0.1,
                       duration: 0.4,
                       ease: "easeOut"
                     }}
-                    whileHover={{ 
-                      x: 5, 
-                      transition: { duration: 0.2 } 
+                    whileHover={{
+                      x: 5,
+                      transition: { duration: 0.2 }
                     }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Link 
-                      href={item.href} 
-                      target={item.external ? "_blank" : undefined}
-                      rel={item.external ? "noopener noreferrer" : undefined}
-                      onClick={onClose}
-                    >
-                      {item.name}
-                    </Link>
+                    {item.download ? (
+                      <a
+                        href={item.href}
+                        onClick={handleDownloadCV}
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        target={item.external ? "_blank" : undefined}
+                        rel={item.external ? "noopener noreferrer" : undefined}
+                        onClick={onClose}
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </motion.li>
                 ))}
               </ul>
