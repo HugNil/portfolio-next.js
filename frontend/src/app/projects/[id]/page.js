@@ -2,6 +2,7 @@
 import fs   from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ProjectDetail({ params }) {
   const { id } = params;
@@ -52,7 +53,7 @@ export default function ProjectDetail({ params }) {
           {project.description}
         </p>
 
-        <img
+        <Image
           src={project.image}
           alt={project.title}
           style={{
