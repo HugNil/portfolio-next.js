@@ -41,6 +41,7 @@ export default function Hero() {
 
       <div className={styles.container}>
         <div className={styles.content}>
+          <p className={styles.name}>Hugo Nilsson</p>
           <div className={styles.headerGroup}>
             <h1 id='heading1' className={`${styles.heading} ${styles.heading1}`}>
               SOFTWARE
@@ -52,9 +53,10 @@ export default function Hero() {
               STUDENT
             </h1>
           </div>
+          <p className={styles.kicker}>Portfolio / Kristianstad University</p>
           <div className={styles.buttonContainer}>
             <a href="/assets/Hugo Nilsson CV.pdf" onClick={handleDownloadCV}>
-              <button className="button-primary" style={{minWidth: '8rem'}}>RESUMÉ</button>
+              <button className="button-primary" style={{minWidth: '8rem'}}>RESUME</button>
             </a>
             <Link href="#projects">
               <button className="button-primary" style={{minWidth: '8rem'}}>PROJECTS</button>

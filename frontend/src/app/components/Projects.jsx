@@ -20,13 +20,22 @@ export default function Projects() {
   return (
     <section className={`section ${styles.projects}`} id="projects">
       <div className={styles.container}>
-        <h2 className={styles.title}>Projects</h2>
-        
+        <div className={styles.header}>
+          <span className={styles.eyebrow}>Selected work</span>
+          <h2 className={styles.title}>Projects</h2>
+          <p className={styles.subtitle}>
+            A quick look at the apps, school projects and experiments I have built.
+          </p>
+        </div>
+
         <div className={styles.grid}>
-          {projects.map((project) => (
-            <div key={project.id} onClick={() => handleProjectClick(project)}>
-              <ProjectCard project={project} />
-            </div>
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              onSelect={() => handleProjectClick(project)}
+            />
           ))}
         </div>
       </div>

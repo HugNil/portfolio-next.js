@@ -1,8 +1,9 @@
 /* Footer.module.css */
 
 .footer {
-  background-color: var(--color-bg-primary);
+  background-color: #162219;
   padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .arrowContainer {
@@ -13,19 +14,23 @@
 }
 
 .arrowLink {
-  display: inline-block;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.24s ease, border-color 0.24s ease, background-color 0.24s ease;
   padding: 0.5rem;
   min-height: 44px;
   min-width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .arrowLink:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  border-color: rgba(205, 230, 183, 0.55);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footerContent {
@@ -37,6 +42,7 @@
 .footerText {
   color: var(--color-text-primary);
   font-size: 0.9rem;
+  font-weight: 700;
   margin: 0;
   padding: 1rem 0;
   pointer-events: none;
@@ -118,4 +124,9 @@
     font-size: 0.7rem;
     padding: 0.375rem 0;
   }
+}
+
+.footerText {
+  cursor: default;
+  user-select: none;
 }

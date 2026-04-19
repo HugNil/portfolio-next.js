@@ -1,165 +1,156 @@
 .stackSection {
   width: 100%;
-  padding-top: 4rem;
-  background-color: var(--color-background);
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 2rem;
   color: var(--color-text-primary);
 }
 
 .sectionHeader {
-  text-align: center;
-  margin-bottom: 3rem;
-  pointer-events: none;
+  display: grid;
+  gap: 0.75rem;
+  align-self: flex-start;
+}
+
+.eyebrow {
+  width: fit-content;
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .stackTitle {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin: 0;
   color: var(--color-text-primary);
-  
-  /* background: linear-gradient(90deg, #4a6cf7, #f072b6);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  */
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .stack {
   width: 100%;
-  max-width: 1500px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  justify-items: center;
+  gap: 1rem;
 }
 
 .categoryCard {
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 280px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 22px 50px rgba(5, 10, 7, 0.16);
+  transition: transform 0.24s ease, border-color 0.24s ease, background-color 0.24s ease;
 }
 
 .categoryCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  border-color: rgba(205, 230, 183, 0.55);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .categoryTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  width: 100%;
-  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
 .stackCardSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0.65rem;
   width: 100%;
 }
 
 .stackCard {
   position: relative;
+  min-height: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
+  gap: 0.45rem;
   padding: 0.8rem;
-  background: rgba(255, 255, 255, 0.03);
-  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
   cursor: pointer;
-  min-height: 100px;
+  transition: transform 0.24s ease, background-color 0.24s ease;
 }
 
 .stackCard:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
 }
 
 .techImageContainer {
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
-  height: 50px;
 }
 
 .techImg {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
-  transition: transform 0.3s ease;
+  transition: transform 0.24s ease;
 }
 
 .stackCard:hover .techImg {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .techName {
-  font-size: 0.85rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.82rem;
+  font-weight: 700;
   text-align: center;
-  margin-top: 0.5rem;
-  color: var(--color-text-primary);
-  font-weight: 500;
 }
 
 .techTooltip {
   position: absolute;
-  top: -40px;
+  top: -38px;
   left: 50%;
-  transform: translateX(-50%);
-  background: var(--color-accent-green);
-  border: 1px solid var(--hover-color);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.8rem;
   z-index: 10;
+  transform: translateX(-50%);
+  padding: 0.42rem 0.7rem;
+  border-radius: 8px;
+  background: #172013;
+  border: 1px solid rgba(216, 239, 190, 0.24);
   pointer-events: none;
   white-space: nowrap;
   opacity: 0;
   animation: fadeIn 0.2s forwards;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
 .techTooltip p {
-  color: #ffffff !important;
   margin: 0;
   padding: 0;
-}
-
-.techTooltip:after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #1F2937;
+  color: #ffffff !important;
+  font-size: 0.8rem;
+  font-weight: 800;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, 8px);
   }
   to {
     opacity: 1;
@@ -167,256 +158,35 @@
   }
 }
 
-/* Responsivitet */
-
-/* Extra stora skärmar (1400px+) */
-@media (max-width: 1599px) {
-  .stack {
-    max-width: 1600px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-  
-  .categoryCard {
-    max-width: 320px;
-    padding: 2rem;
-  }
-  
-  .stackTitle {
-    font-size: 2.75rem;
-  }
-}
-
-/* Stora skärmar (1200px - 1399px) */
-@media (max-width: 1399px) {
-  .stack {
-    max-width: 1200px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-  }
-  
-  .categoryCard {
-    max-width: 300px;
-  }
-}
-
 @media (max-width: 1199px) {
-  .stackSection {
-    padding-top: 3rem;
-  }
-  
-  .stack {
-    max-width: 1000px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-  }
-  
-  .categoryCard {
-    max-width: 280px;
-  }
-  
-  .stackTitle {
-    font-size: 2.25rem;
-  }
-  
-  .sectionHeader {
-    margin-bottom: 2.5rem;
-  }
-}
-
-@media (max-width: 991px) {
-  .stackSection {
-    padding-top: 2.5rem;
-  }
-  
   .stack {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  
-  .categoryCard {
-    max-width: 320px;
-    padding: 1.25rem;
-  }
-  
-  .stackTitle {
-    font-size: 2rem;
-  }
-  
-  .categoryTitle {
-    font-size: 1.375rem;
   }
 }
 
 @media (max-width: 768px) {
-  .stackSection {
-    padding-top: 2rem;
-  }
-  
-  .stack {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .categoryCard {
-    max-width: 90%;
-    min-width: 280px;
-    padding: 1.5rem;
-  }
-  
-  .stackCardSection {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.75rem;
-  }
-  
   .stackTitle {
-    font-size: 1.875rem;
-  }
-  
-  .categoryTitle {
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-  
-  .sectionHeader {
-    margin-bottom: 2rem;
-  }
-  
-  .stackCard {
-    min-height: 90px;
-    padding: 0.75rem;
-  }
-  
-  .techImg {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .techImageContainer {
-    height: 45px;
-  }
-  
-  .techName {
-    font-size: 0.8rem;
+    font-size: 2.45rem;
   }
 }
 
-/* Små mobiler (576px och mindre) */
 @media (max-width: 576px) {
-  .stackSection {
-    padding-top: 1.5rem;
-  }
-  
   .stack {
-    gap: 1.25rem;
+    grid-template-columns: 1fr;
   }
-  
-  .categoryCard {
-    max-width: 95%;
-    min-width: 260px;
-    padding: 1.25rem;
-  }
-  
+
   .stackCardSection {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
   }
-  
+
   .stackTitle {
-    font-size: 1.625rem;
-  }
-  
-  .categoryTitle {
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
-  }
-  
-  .stackCard {
-    min-height: 80px;
-    padding: 0.5rem;
-  }
-  
-  .techImg {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .techImageContainer {
-    height: 40px;
-    margin-bottom: 0.25rem;
-  }
-  
-  .techName {
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 480px) {
-  .stackSection {
-    padding-top: 1rem;
-  }
-  
-  .stack {
-    gap: 1rem;
-  }
-  
-  .categoryCard {
-    min-width: 240px;
-    padding: 1rem;
-  }
-  
-  .stackCardSection {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
-  
-  .stackTitle {
-    font-size: 1.5rem;
-  }
-  
-  .categoryTitle {
-    font-size: 1rem;
-  }
-  
-  .stackCard {
-    min-height: 70px;
-    padding: 0.75rem;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 0.75rem;
-  }
-  
-  .techImageContainer {
-    height: 35px;
-    margin-bottom: 0;
-    flex-shrink: 0;
-  }
-  
-  .techImg {
-    width: 28px;
-    height: 28px;
-  }
-  
-  .techName {
-    font-size: 0.8rem;
-    margin-top: 0;
-    text-align: left;
-    flex-grow: 1;
-  }
-}
-
-@media (max-width: 360px) {
-  .categoryCard {
-    min-width: 220px;
-    padding: 0.875rem;
-  }
-  
-  .stackTitle {
-    font-size: 1.375rem;
-  }
-  
-  .techName {
-    font-size: 0.75rem;
-  }
+.eyebrow,
+.stackTitle,
+.categoryTitle {
+  cursor: default;
+  user-select: none;
 }

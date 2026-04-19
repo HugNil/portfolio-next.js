@@ -1,19 +1,44 @@
-## Getting Started
+## Starta lokalt
 
-To install dependencies
+Krav: Node.js och npm installerat.
+
+Installera alla dependencies från projektroten:
 
 ```bash
 npm run install-all
 ```
 
-First, run the development server:
+Starta utvecklingsservern:
 
 ```bash
 npm run start
-# or
-yarn start
-# or
-pnpm start
-# or
-bun start
+```
+
+Öppna sedan:
+
+```bash
+http://localhost:3000
+```
+
+## Vanliga kommandon
+
+Kör bara frontend-appen:
+
+```bash
+cd frontend
+npm run dev
+```
+
+Bygg projektet för produktion:
+
+```bash
+npm run build
+```
+
+Starta en byggd production-version:
+
+```bash
+cd frontend
+npm run build
+npm run start
 ```

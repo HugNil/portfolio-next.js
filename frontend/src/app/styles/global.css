@@ -17,7 +17,7 @@ p, span, li {
   font-family: var(--font-sans);
   color: var(--color-text-secondary);
   line-height: 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .button {
@@ -29,16 +29,21 @@ p, span, li {
 }
 
 .button-primary {
-  background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid var(--color-accent-green);
-  border-radius: 5px;
-  color: var(--color-text-primary);
-  padding: 0.65rem 1.4rem;
+  background-color: #d8efbe;
+  border: 1px solid rgba(216, 239, 190, 0.32);
+  border-radius: 8px;
+  color: #172013;
+  padding: 0.78rem 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0;
   cursor: pointer;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
 }
 .button-primary:hover {
-  background-color: var(--hover-color);
-  transition: background-color 0.35s ease, color 0.35s ease;
+  background-color: #ffffff;
+  color: #172013;
+  transform: translateY(-1px);
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
 
 .button-secondary {
@@ -67,7 +72,9 @@ p, span, li {
 }
 
 .section {
-  background-color: var(--color-bg-primary);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0)),
+    var(--color-bg-primary);
   min-height: 100vh;
   width: 100%;
   padding: 2rem 0;

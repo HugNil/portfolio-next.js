@@ -3,7 +3,7 @@
 .navbar {
   position: absolute;
   width: 100%;
-  height: 50px;
+  height: 72px;
   top: 0;
   z-index: 50;
   background-color: transparent;
@@ -22,9 +22,17 @@
 }
 
 .logo {
-  font-size: 2.5rem;
-  font-weight: 500;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
   color: var(--color-text-primary);
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   pointer-events: none;
 }
 
@@ -40,10 +48,6 @@
 
 /* Tablet anpassning */
 @media (max-width: 1024px) {
-  .logo {
-    font-size: 2.25rem;
-  }
-  
   .inner {
     padding: 0 1.5rem;
   }
@@ -61,7 +65,7 @@
   }
   
   .logo {
-    font-size: 2rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -76,17 +80,18 @@
   }
   
   .logo {
-    font-size: 1.75rem;
+    font-size: 0.82rem;
   }
 }
 
 /* Säkerställ att loggan är läsbar på små skärmar */
 @media (max-width: 360px) {
-  .logo {
-    font-size: 1.5rem;
-  }
-  
   .inner {
     padding: 0 0.5rem;
   }
+}
+
+.logo {
+  cursor: default;
+  user-select: none;
 }

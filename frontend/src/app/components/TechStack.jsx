@@ -10,6 +10,7 @@ export default function TechStack() {
   return (
     <section className={styles.stackSection} id="tech-stack">
       <div className={styles.sectionHeader}>
+        <span className={styles.eyebrow}>Tools</span>
         <h2 className={styles.stackTitle}>Tech Stack</h2>
       </div>
       

@@ -1,21 +1,24 @@
 [
   {
-    "id": "portfolio next.js",
-    "title": "Portfolio Next.js",
-    "description": "Portfolio site built with Next.js",
-    "longDescription": "A portfolio site showcasing my projects and skills, built with Next.js. The site features a clean design, responsive layout, and easy navigation. It includes sections for my work, skills, and contact information.",
-    "technologies": ["Next.js", "React", "JavaScript", "Responsive Design", "Framer motion", "CSS Modules", "App Router"],
-    "image": "/Portfolio.PNG",
-    "images": ["/Portfolio.PNG", "/Skärmbild 2025-12-01 193438.png"],
-    "liveUrl": "https://hugonilsson.vercel.app/",
-    "repoUrl": "https://github.com/HugNil/portfolio-react",
+    "id": "tryggatillsammans",
+    "title": "Trygga Tillsammans",
+    "description": "The goal of the application is to increase the public awareness and preparedness regarding Sweden's total defense duty.",
+    "longDescription": "Trygga Tillsammans is an Android application developed during the Mobile Application Development course. Its purpose is to increase public awareness and preparedness regarding Sweden's total defense duty. The app provides users with facts, checklists, quizzes, nearest shelters. It was a group project following agile workflows from concept to final product.",
+    "technologies": ["Kotlin", "Jetpack Compose", "Firebase", "Agile"],
+    "image": "/20251130_1540_Uppskalad Sverigesköld_remix_01kbak92gceqcatnkhpw7trn33.png",
+    "images": ["/Nytt projekt.png"],
+    "liveUrl": "",
+    "repoUrl": "",
     "features": [
-      "Project Showcase",
+      "User Authentication",
+      "Light/Dark Mode",
       "Responsive Design",
-      "Smooth Scrolling",
-      "Modern UI/UX"
+      "Informative Facts",
+      "Checklists for Preparedness",
+      "Quizzes to Test Knowledge",
+      "Nearest Shelters Locator"
     ],
-    "contributors": ["Hugo Nilsson"]
+    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr", "Ian Onamu", "Simon Persson"]
   },
   {
     "id": "house18",
@@ -41,25 +44,22 @@
     "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"]
   },
   {
-    "id": "tryggatillsammans",
-    "title": "Trygga Tillsammans",
-    "description": "The goal of the application is to increase the public awareness and preparedness regarding Sweden's total defense duty.",
-    "longDescription": "Trygga Tillsammans is an Android application developed during the Mobile Application Development course. Its purpose is to increase public awareness and preparedness regarding Sweden's total defense duty. The app provides users with facts, checklists, quizzes, nearest shelters. It was a group project following agile workflows from concept to final product.",
-    "technologies": ["Kotlin", "Jetpack Compose", "Firebase", "Agile"],
-    "image": "/20251130_1540_Uppskalad Sverigesköld_remix_01kbak92gceqcatnkhpw7trn33.png",
-    "images": ["/Nytt projekt.png"],
-    "liveUrl": "",
-    "repoUrl": "",
+    "id": "portfolio next.js",
+    "title": "Portfolio Next.js",
+    "description": "Portfolio site built with Next.js",
+    "longDescription": "A portfolio site showcasing my projects and skills, built with Next.js. The site features a clean design, responsive layout, and easy navigation. It includes sections for my work, skills, and contact information.",
+    "technologies": ["Next.js", "React", "JavaScript", "Responsive Design", "Framer motion", "CSS Modules", "App Router"],
+    "image": "/Portfolio.PNG",
+    "images": ["/Portfolio.PNG", "/Skärmbild 2025-12-01 193438.png"],
+    "liveUrl": "https://hugonilsson.vercel.app/",
+    "repoUrl": "https://github.com/HugNil/portfolio-react",
     "features": [
-      "User Authentication",
-      "Light/Dark Mode",
+      "Project Showcase",
       "Responsive Design",
-      "Informative Facts",
-      "Checklists for Preparedness",
-      "Quizzes to Test Knowledge",
-      "Nearest Shelters Locator"
+      "Smooth Scrolling",
+      "Modern UI/UX"
     ],
-    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr", "Ian Onamu", "Simon Persson"]
+    "contributors": ["Hugo Nilsson"]
   },
   {
     "id": "solace",

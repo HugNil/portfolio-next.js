@@ -132,7 +132,7 @@ export default function MenuModal({ isOpen, onClose }) {
             >
               <ul>
                 {[
-                  { name: 'RESUMÉ', href: '/assets/Hugo Nilsson CV.pdf', download: true },
+                  { name: 'RESUME', href: '/assets/Hugo Nilsson CV.pdf', download: true },
                   { name: 'GITHUB', href: 'https://github.com/hugnil', external: true },
                   { name: 'LINKEDIN', href: 'https://www.linkedin.com/in/hugo-nilsson-80b33621b/sv/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3BugARs1P5T3KZPyOfrkYEvQ%3D%3D', external: true },
                   { name: 'EMAIL', href: 'mailto:hugo.nilsson0002@gmail.com' }
