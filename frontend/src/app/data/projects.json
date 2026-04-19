@@ -1,5 +1,28 @@
 [
   {
+    "id": "chatapp",
+    "title": "ChatApp",
+    "description": "A desktop chat application currently under development that allows users to connect through DMs, group chats, and servers, with a focus on user freedom and flexibility.",
+    "longDescription": "This is a desktop chat application currently under development, designed to let users connect through direct messages, group chats, and servers. The goal is to provide as much freedom and flexibility as possible, giving users control over how they communicate and interact within the platform.",
+    "technologies": ["Python", "TypeScript", "PostgreSQL", "Supabase", "Tailwind", "FastAPI", "SlowAPI"],
+    "image": "/chatapp_logo1.png",
+    "images": ["/chatapp_logo1.png"],
+    "liveUrl": "",
+    "repoUrl": "",
+    "features": [
+      "User Authentication",
+      "Light/Dark Mode",
+      "Responsive Design",
+      "Direct messages between users",
+      "Group chat",
+      "Servers",
+      "Voice chat",
+      "File sharing",
+      "Screen sharing"
+    ],
+    "contributors": ["Hugo Nilsson", "Jacob Hellgren"]
+  },
+  {
     "id": "tryggatillsammans",
     "title": "Trygga Tillsammans",
     "description": "The goal of the application is to increase the public awareness and preparedness regarding Sweden's total defense duty.",
