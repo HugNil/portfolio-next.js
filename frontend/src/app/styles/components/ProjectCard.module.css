@@ -199,7 +199,7 @@
   }
 
   .media {
-    min-height: 210px;
+    min-height: 190px;
   }
 
   .content {
@@ -208,5 +208,40 @@
 
   .title {
     font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .media {
+    min-height: 170px;
+  }
+
+  .projectNumber,
+  .category {
+    top: 0.75rem;
+    font-size: 0.72rem;
+  }
+
+  .projectNumber {
+    left: 0.75rem;
+  }
+
+  .category {
+    right: 0.75rem;
+    max-width: 58%;
+  }
+
+  .headingRow {
+    gap: 0.6rem;
+  }
+
+  .description {
+    font-size: 0.92rem;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .footer {
+    padding-top: 0;
   }
 }

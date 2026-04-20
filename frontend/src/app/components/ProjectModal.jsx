@@ -5,6 +5,7 @@ import styles from '../styles/components/ProjectModal.module.css';
 
 export default function ProjectModal({ project, onClose }) {
   const thumbnails = Array.isArray(project.images) ? project.images.filter(Boolean) : [];
+  const references = Array.isArray(project.references) ? project.references.filter(Boolean) : [];
   const [selectedImage, setSelectedImage] = useState(
     (thumbnails.length > 0 ? thumbnails[0] : (project.image || ''))
   );
@@ -180,6 +181,44 @@ export default function ProjectModal({ project, onClose }) {
                 </a>
               )}
             </div>
+
+            {references.length > 0 && (
+              <div className={styles.creditsSection}>
+                <h3 className={styles.sectionTitle}>Credits</h3>
+                <ul className={styles.references}>
+                  {references.map((reference, index) => {
+                    const label = typeof reference === 'string' ? reference : reference.label;
+                    const attribution = typeof reference === 'string' ? '' : reference.attribution;
+                    const url = typeof reference === 'string' ? '' : reference.url;
+                    const note = typeof reference === 'string' ? '' : reference.note;
+                    const visibleLabel = label || attribution || 'Reference';
+
+                    return (
+                      <li key={`${visibleLabel}-${index}`} className={styles.reference}>
+                        {attribution && (
+                          <span className={styles.referenceAttribution}>{attribution}</span>
+                        )}
+                        {!attribution && (
+                          url && label ? (
+                            <a href={url} target="_blank" rel="noopener noreferrer" className={styles.referenceLink}>
+                              {label}
+                            </a>
+                          ) : (
+                            <span className={styles.referenceLabel}>{visibleLabel}</span>
+                          )
+                        )}
+                        {note && <span className={styles.referenceNote}>{note}</span>}
+                        {attribution && url && (
+                          <a href={url} target="_blank" rel="noopener noreferrer" className={styles.referenceSource}>
+                            Source
+                          </a>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

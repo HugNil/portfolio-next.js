@@ -13,6 +13,7 @@
 .modal {
   position: relative;
   width: min(1120px, 100%);
+  height: min(88vh, 860px);
   max-height: min(88vh, 860px);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.13);
@@ -49,37 +50,43 @@
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
-  max-height: inherit;
-  overflow: auto;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .gallery {
-  min-height: 100%;
+  min-height: 0;
+  height: 100%;
   padding: 1rem;
   background: #18231b;
   display: grid;
   align-content: start;
   gap: 0.9rem;
+  overflow: hidden;
 }
 
 .imageShell {
   border-radius: 8px;
   overflow: hidden;
   background: #0d130f;
-  min-height: 460px;
+  height: min(58vh, 560px);
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerImage {
   width: 100%;
   height: 100%;
-  min-height: 460px;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 0.75rem;
 }
 
 .headerImageContain {
   object-fit: contain;
-  padding: 1rem;
 }
 
 .thumbnails {
@@ -133,7 +140,11 @@
 
 .content {
   padding: 2.2rem;
-  overflow: auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
 }
 
 .eyebrow {
@@ -207,6 +218,10 @@
   margin-top: 1.6rem;
 }
 
+.creditsSection {
+  margin-top: 1.1rem;
+}
+
 .sectionTitle {
   margin: 0 0 0.8rem 0;
   color: #172013;
@@ -271,6 +286,71 @@
   line-height: 1.6;
 }
 
+.references {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.reference {
+  margin: 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #dce6d5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #283024;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.referenceLink,
+.referenceLabel {
+  width: fit-content;
+  color: #172013;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.referenceAttribution {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  background: #172013;
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.referenceLink {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.referenceSource {
+  width: fit-content;
+  color: #4b6e52;
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.referenceNote {
+  margin: 0;
+  color: #5f6d59;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -314,36 +394,49 @@
 }
 
 @media (max-width: 920px) {
+  .overlay {
+    align-items: flex-start;
+    padding: 0.75rem;
+  }
+
   .modal {
-    max-height: 94vh;
+    height: auto;
+    max-height: calc(100svh - 1.5rem);
   }
 
   .layout {
     grid-template-columns: 1fr;
+    height: auto;
+    max-height: calc(100svh - 1.5rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .gallery {
     min-height: auto;
+    overflow: visible;
   }
 
-  .imageShell,
-  .headerImage {
-    min-height: 320px;
+  .imageShell {
+    height: 42svh;
+    min-height: 280px;
   }
 
   .content {
     padding: 1.4rem;
+    overflow: visible;
   }
 }
 
 @media (max-width: 560px) {
   .overlay {
-    padding: 0.5rem;
+    padding: 0.45rem;
     align-items: flex-start;
   }
 
   .modal {
-    max-height: 98vh;
+    height: auto;
+    max-height: calc(100svh - 0.9rem);
   }
 
   .closeButton {
@@ -357,9 +450,9 @@
     padding: 0.55rem;
   }
 
-  .imageShell,
-  .headerImage {
-    min-height: 240px;
+  .imageShell {
+    height: 34svh;
+    min-height: 220px;
   }
 
   .thumbnails {
@@ -380,11 +473,45 @@
   }
 
   .title {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
   }
 
   .links {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  .gallery {
+    padding: 0.45rem;
+    gap: 0.55rem;
+  }
+
+  .imageShell {
+    height: 30svh;
+    min-height: 190px;
+  }
+
+  .headerImage {
+    padding: 0.45rem;
+  }
+
+  .content {
+    padding: 0.85rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .description,
+  .feature,
+  .contributorText {
+    font-size: 0.9rem;
+  }
+
+  .referenceAttribution {
+    font-size: 0.72rem;
   }
 }
 

@@ -1,35 +1,18 @@
 [
   {
-    "id": "chatapp",
-    "title": "ChatApp",
-    "description": "A desktop chat application currently under development that allows users to connect through DMs, group chats, and servers, with a focus on user freedom and flexibility.",
-    "longDescription": "This is a desktop chat application currently under development, designed to let users connect through direct messages, group chats, and servers. The goal is to provide as much freedom and flexibility as possible, giving users control over how they communicate and interact within the platform.",
-    "technologies": ["Python", "TypeScript", "PostgreSQL", "Supabase", "Tailwind", "FastAPI", "SlowAPI"],
-    "image": "/chatapp_logo1.png",
-    "images": ["/chatapp_logo1.png"],
-    "liveUrl": "",
-    "repoUrl": "",
-    "features": [
-      "User Authentication",
-      "Light/Dark Mode",
-      "Responsive Design",
-      "Direct messages between users",
-      "Group chat",
-      "Servers",
-      "Voice chat",
-      "File sharing",
-      "Screen sharing"
-    ],
-    "contributors": ["Hugo Nilsson", "Jacob Hellgren"]
-  },
-  {
     "id": "tryggatillsammans",
     "title": "Trygga Tillsammans",
     "description": "The goal of the application is to increase the public awareness and preparedness regarding Sweden's total defense duty.",
     "longDescription": "Trygga Tillsammans is an Android application developed during the Mobile Application Development course. Its purpose is to increase public awareness and preparedness regarding Sweden's total defense duty. The app provides users with facts, checklists, quizzes, nearest shelters. It was a group project following agile workflows from concept to final product.",
     "technologies": ["Kotlin", "Jetpack Compose", "Firebase", "Agile"],
-    "image": "/20251130_1540_Uppskalad Sverigesköld_remix_01kbak92gceqcatnkhpw7trn33.png",
-    "images": ["/Nytt projekt.png"],
+    "image": "/Mockuuups iPhone 16 mockup in a woman's hand with concrete backdrop.jpeg",
+    "images": ["/Mockuuups Free Transparent iPhone Air Mockupdashboard.png",
+    "/Mockuuups Free Transparent iPhone Air Mockup.png",
+    "/Mockuuups Free Transparent iPhone Air Mockup0.png",
+    "/Mockuuups Free Transparent iPhone Air Mockup1.png",
+    "/Mockuuups Free Transparent iPhone Air Mockup2.png",
+    "/Mockuuups Free Transparent iPhone Air Mockup3.png"
+  ],
     "liveUrl": "",
     "repoUrl": "",
     "features": [
@@ -41,14 +24,47 @@
       "Quizzes to Test Knowledge",
       "Nearest Shelters Locator"
     ],
-    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr", "Ian Onamu", "Simon Persson"]
+    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr", "Ian Onamu", "Simon Persson"],
+    "references": [{
+    "label": "Mockuuups Studio",
+    "url": "https://mockuuups.studio",
+    "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+    "note": "Mockup attribution required by the free personal license."
+  }]
+  },
+  {
+    "id": "interactivehouse",
+    "title": "Interactive House",
+    "description": "A multiplatform smart-home simulation for monitoring and controlling devices in an Arduino-based house model.",
+    "longDescription": "Interactive House is a multiplatform smart-home simulation developed as part of the Software Engineering course at Kristianstad University. The system allows users to monitor and control devices such as lights and fans in an Arduino-based house model through web and mobile interfaces. My contribution was within the server group, where I worked on the central backend responsible for device registration, state management, command handling, authentication, and communication between user interfaces and connected devices.",
+    "technologies": ["Python", "FastAPI", "Firebase Realtime Database", "TypeScript", "Kotlin", "Android", "Arduino"],
+    "image": "/Mockuuups Free iPad Pro mockup on textured fabric and wooden surface.jpeg",
+    "images": ["/Mockuuups Free iPad Pro mockup on textured fabric and wooden surface.jpeg",
+    "/Mockuuups Free iPad Pro mockup on textured fabric and wooden surface1.jpeg",
+    "/56c77551-e571-431f-b051-ae11499a6efd.png"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/interactive-house-hkr/interactive-house",
+    "features": [
+      "Device registration and state management",
+      "Command handling between UI and devices",
+      "Heartbeat-based online/offline detection",
+      "REST API for web and mobile clients",
+      "Authentication support"
+    ],
+    "contributors": ["Hugo Nilsson", "Jacob Hellgren", "Nicholas Malm", "Ian Onamu"],
+    "references": [{
+    "label": "Mockuuups Studio",
+    "url": "https://mockuuups.studio",
+    "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+    "note": "Mockup attribution required by the free personal license."
+  }]
   },
   {
     "id": "house18",
     "title": "House 18",
     "description": "Fullstack web application simulating a clothing store.",
     "longDescription": "House 18 is a fullstack web application built as part of a university project during the course Full Stack Development - DA219B at Kristianstad University. The app simulates a modern clothing store with user authentication, a responsive shopping exprerience and admin product management.",
-    "technologies": ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT", "CSS", "JavaScript"],
+    "technologies": ["JavaScript", "React", "Vite", "Node.js", "Express", "MongoDB", "JWT", "CSS"],
     "image": "/Gemini_Generated_Image_qe0w81qe0w81qe0w.png",
     "images": ["/Gemini_Generated_Image_qe0w81qe0w81qe0w.png", "/Gemini_Generated_Image_jctfexjctfexjctf.png", "/Gemini_Generated_Image_im5zlfim5zlfim5z.png", "/Gemini_Generated_Image_gse3cjgse3cjgse3.png"],
     "liveUrl": "https://house-18.vercel.app/",
@@ -64,16 +80,21 @@
       "Responsive Design",
       "User Roles"
     ],
-    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"]
+    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"],
+    "references": []
   },
   {
     "id": "portfolio next.js",
     "title": "Portfolio Next.js",
     "description": "Portfolio site built with Next.js",
     "longDescription": "A portfolio site showcasing my projects and skills, built with Next.js. The site features a clean design, responsive layout, and easy navigation. It includes sections for my work, skills, and contact information.",
-    "technologies": ["Next.js", "React", "JavaScript", "Responsive Design", "Framer motion", "CSS Modules", "App Router"],
-    "image": "/Portfolio.PNG",
-    "images": ["/Portfolio.PNG", "/Skärmbild 2025-12-01 193438.png"],
+    "technologies": ["JavaScript", "React", "Next.js", "Responsive Design", "Framer motion", "CSS Modules", "App Router"],
+    "image": "/Mockuuups Free Clean desk with Dell display mockup.jpeg",
+    "images": ["/Mockuuups Free Clean desk with Dell display mockup.jpeg", 
+    "/Mockuuups Free Clean desk with Dell display mockup1.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup2.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup3.jpeg"
+  ],
     "liveUrl": "https://hugonilsson.vercel.app/",
     "repoUrl": "https://github.com/HugNil/portfolio-react",
     "features": [
@@ -82,7 +103,40 @@
       "Smooth Scrolling",
       "Modern UI/UX"
     ],
-    "contributors": ["Hugo Nilsson"]
+    "contributors": ["Hugo Nilsson"],
+    "references": [{
+    "label": "Mockuuups Studio",
+    "url": "https://mockuuups.studio",
+    "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+    "note": "Mockup attribution required by the free personal license."
+  }]
+  },
+  {
+    "id": "userscope",
+    "title": "UserScope",
+    "description": "Assignment for Frontend course at Kristianstad University",
+    "longDescription": "This is a front end assignment in the course Front End at Kristianstad University. We learned how to fetch data from an API. There were also a lot of focus on semantic design and responsiveness.",
+    "technologies": ["Javascript", "HTML", "CSS", "API", "Responsive Design"],
+    "image": "/Mockuuups Free Macbook Pro Space Gray mockup on the wooden table.jpeg",
+    "images": ["/Mockuuups Free Macbook Pro Space Gray mockup on the wooden table.jpeg",
+    "/Mockuuups Free Macbook Pro Space Gray mockup on the wooden table1.jpeg",
+    "/Mockuuups Free Macbook Pro Space Gray mockup on the wooden table2.jpeg"
+  ],
+    "liveUrl": "https://dynamic-website-js232nk64-hugos-projects-b7299843.vercel.app/pages/posts.html",
+    "repoUrl": "https://github.com/HugNil/dynamic-website",
+    "features": [
+      "Explore posts from different users",
+      "Read comments and reactions on posts",
+      "Check out different user profiles",
+      "Contact the site admin for questions or feedback"
+    ],
+    "contributors": ["Hugo Nilsson"],
+    "references": [{
+    "label": "Mockuuups Studio",
+    "url": "https://mockuuups.studio",
+    "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+    "note": "Mockup attribution required by the free personal license."
+  }]
   },
   {
     "id": "solace",
@@ -93,32 +147,15 @@
     "image": "/solace-logo.webp",
     "images": ["/solace-logo.webp"],
     "liveUrl": "",
-    "repoUrl": "https://github.com/ditt-anvandarnamn/todo-app",
+    "repoUrl": "https://github.com/HugNil/Solace",
     "features": [
       "User Authentication",
       "Register mood and stress levels",
       "Stress relief techniques",
       "Summary dashboard"
     ],
-    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"]
-  },
-  {
-    "id": "userscope",
-    "title": "UserScope",
-    "description": "Assignment for Frontend course at Kristianstad University",
-    "longDescription": "This is a front end assignment in the course Front End at Kristianstad University. We learned how to fetch data from an API. There were also a lot of focus on semantic design and responsiveness.",
-    "technologies": ["Javascript", "HTML", "CSS", "API", "Responsive Design"],
-    "image": "/userscope.PNG",
-    "images": ["/userscope.PNG"],
-    "liveUrl": "https://dynamic-website-js232nk64-hugos-projects-b7299843.vercel.app/pages/posts.html",
-    "repoUrl": "https://github.com/HugNil/dynamic-website",
-    "features": [
-      "Explore posts from different users",
-      "Read comments and reactions on posts",
-      "Check out different user profiles",
-      "Contact the site admin for questions or feedback"
-    ],
-    "contributors": ["Hugo Nilsson"]
+    "contributors": ["Hugo Nilsson", "Nicholas Malm", "Jacob Hellgren", "Pontus Havmyr"],
+    "references": []
   },
   {
     "id": "morecomingsoon",
@@ -131,6 +168,7 @@
     "liveUrl": "",
     "repoUrl": "https://github.com/HugNil",
     "features": [],
-    "contributors": []
+    "contributors": [],
+    "references": []
   }
 ]

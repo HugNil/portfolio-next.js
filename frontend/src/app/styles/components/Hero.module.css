@@ -1,5 +1,6 @@
 .section {
   min-height: 100vh;
+  min-height: 100svh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -137,7 +138,8 @@
 @media (max-width: 767px) {
   .section {
     min-height: 88vh;
-    padding-top: 5rem;
+    min-height: 88svh;
+    padding-top: 5.5rem;
     padding-bottom: 3rem;
   }
 
@@ -159,11 +161,11 @@
   }
 
   .heading {
-    font-size: 3.15rem;
+    font-size: 2.8rem;
   }
 
   .name {
-    font-size: 3.8rem;
+    font-size: 3.15rem;
   }
 
   .buttonContainer {
@@ -172,12 +174,28 @@
 }
 
 @media (max-width: 479px) {
+  .container {
+    width: min(var(--max-width), calc(100% - 1.5rem));
+  }
+
+  .content {
+    gap: 1rem;
+  }
+
   .heading {
-    font-size: 2.35rem;
+    font-size: 2rem;
   }
 
   .name {
-    font-size: 2.85rem;
+    font-size: 2.15rem;
+    line-height: 0.95;
+  }
+
+  .kicker {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
   }
 
   .buttonContainer {
@@ -188,6 +206,16 @@
   .buttonContainer a,
   .buttonContainer button {
     width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+
+  .name {
+    font-size: 1.85rem;
   }
 }
 
