@@ -8,6 +8,7 @@ import styles from '../styles/components/Projects.module.css';
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
@@ -28,16 +29,27 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className={styles.grid}>
+        <div className={`${styles.grid} ${showAllProjects ? styles.gridExpanded : ''}`}>
           {projects.map((project, index) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              index={index}
-              onSelect={() => handleProjectClick(project)}
-            />
+            <div key={project.id} className={styles.projectItem}>
+              <ProjectCard
+                project={project}
+                index={index}
+                onSelect={() => handleProjectClick(project)}
+              />
+            </div>
           ))}
         </div>
+
+        {projects.length > 5 && (
+          <button
+            type="button"
+            className={styles.viewMoreButton}
+            onClick={() => setShowAllProjects((current) => !current)}
+          >
+            {showAllProjects ? 'Show less' : 'View more projects'}
+          </button>
+        )}
       </div>
 
       {selectedProject && (
