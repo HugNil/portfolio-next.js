@@ -116,6 +116,7 @@
 
   .imageContainer {
     width: min(260px, 100%);
+    box-shadow: 0 14px 30px rgba(5, 10, 7, 0.18);
   }
 }
 

@@ -397,6 +397,7 @@
   .overlay {
     align-items: flex-start;
     padding: 0.75rem;
+    backdrop-filter: none;
   }
 
   .modal {
@@ -425,6 +426,26 @@
   .content {
     padding: 1.4rem;
     overflow: visible;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .closeButton,
+  .thumbnailButton,
+  .linkButton,
+  .linkButtonSecondary {
+    transition: none;
+  }
+
+  .closeButton:hover,
+  .closeButton:focus-visible,
+  .thumbnailButton:hover,
+  .thumbnailButton:focus-visible,
+  .linkButton:hover,
+  .linkButtonSecondary:hover,
+  .linkButton:focus-visible,
+  .linkButtonSecondary:focus-visible {
+    transform: none;
   }
 }
 

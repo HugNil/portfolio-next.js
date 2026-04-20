@@ -11,7 +11,7 @@ export default function ProjectCard({ project, index = 0, onSelect }) {
     <>
       <div className={styles.media}>
         {encodedCover && (
-          <img src={encodedCover} alt="" className={styles.image} loading="lazy" />
+          <img src={encodedCover} alt="" className={styles.image} loading="lazy" decoding="async" />
         )}
         <div className={styles.mediaShade} />
         <span className={styles.projectNumber}>{String(index + 1).padStart(2, '0')}</span>

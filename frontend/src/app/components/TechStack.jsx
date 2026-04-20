@@ -31,6 +31,8 @@ export default function TechStack() {
                       src={tech.img}
                       alt={tech.name}
                       className={styles.techImg}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <span className={styles.techName}>

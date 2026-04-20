@@ -171,6 +171,14 @@
   .buttonContainer {
     justify-content: center;
   }
+
+  .gridItem img {
+    filter: saturate(0.82);
+  }
+
+  .kicker {
+    backdrop-filter: none;
+  }
 }
 
 @media (max-width: 479px) {

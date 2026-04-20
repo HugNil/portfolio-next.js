@@ -6,14 +6,14 @@ import styles from '../styles/components/Hero.module.css';
 
 export default function Hero() {
   const images = [
-    '/assets/IMG20240703130257-EDIT-EDIT-EDIT.jpg',
-    '/assets/IMG_20190215_162733.jpg',
-    '/assets/IMG_20191122_165346.jpg',
-    '/assets/IMG_20220629_205602.jpg',
-    '/assets/IMG_20230617_124039.jpg',
-    '/assets/IMG_20190212_150838.jpg',
-    '/assets/IMG20240703125715.jpg',
-    '/assets/IMG_20230618_154142.jpg'
+    '/optimized/assets-img20240703130257-edit-edit-edit.webp',
+    '/optimized/assets-img-20190215-162733.webp',
+    '/optimized/assets-img-20191122-165346.webp',
+    '/optimized/assets-img-20220629-205602.webp',
+    '/optimized/assets-img-20230617-124039.webp',
+    '/optimized/assets-img-20190212-150838.webp',
+    '/optimized/assets-img20240703125715.webp',
+    '/optimized/assets-img-20230618-154142.webp'
   ];
 
   const handleDownloadCV = (e) => {
@@ -34,7 +34,13 @@ export default function Hero() {
       <div className={styles.imageGrid}>
         {images.map((img, index) => (
           <div key={index} className={`${styles.gridItem} ${styles[`item${index + 1}`]}`}>
-            <img src={img} alt="" />
+            <img
+              src={img}
+              alt=""
+              loading={index < 2 ? 'eager' : 'lazy'}
+              decoding="async"
+              fetchPriority={index < 2 ? 'high' : 'low'}
+            />
           </div>
         ))}
       </div>

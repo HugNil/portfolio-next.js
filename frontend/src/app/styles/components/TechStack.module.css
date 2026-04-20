@@ -240,6 +240,24 @@
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .categoryCard,
+  .stackCard,
+  .techImg {
+    transition: none;
+  }
+
+  .categoryCard:hover,
+  .stackCard:hover,
+  .stackCard:hover .techImg {
+    transform: none;
+  }
+
+  .techTooltip {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) {
   .stackCardSection {
     grid-template-columns: 1fr;

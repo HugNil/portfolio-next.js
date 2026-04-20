@@ -72,6 +72,7 @@ export default function ProjectModal({ project, onClose }) {
                 alt={project.title}
                 className={`${styles.headerImage} ${preferContain ? styles.headerImageContain : ''}`}
                 onLoad={handleImageLoad}
+                decoding="async"
               />
             </div>
 
@@ -89,6 +90,8 @@ export default function ProjectModal({ project, onClose }) {
                       src={img ? encodeURI(img) : ''}
                       alt=""
                       className={styles.thumbnail}
+                      loading="lazy"
+                      decoding="async"
                     />
                   </button>
                 ))}

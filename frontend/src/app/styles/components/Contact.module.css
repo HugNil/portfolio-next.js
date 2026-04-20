@@ -119,6 +119,17 @@
   }
 }
 
+@media (hover: none) and (pointer: coarse) {
+  .link {
+    transition: none;
+  }
+
+  .link:hover,
+  .link:focus-visible {
+    transform: none;
+  }
+}
+
 .eyebrow,
 .heading {
   cursor: default;
