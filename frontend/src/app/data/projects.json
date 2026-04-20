@@ -48,6 +48,59 @@
     ]
   },
   {
+  "id": "bowlingkristianstad",
+  "title": "Bowling Kristianstad",
+  "description": "Website for a local bowling alley in Kristianstad",
+  "longDescription": "This web application was built for Bowling Kristianstad to give the local bowling alley a modern, responsive website with clearer information about pricing, opening hours, events, birthday parties and contact details. The website includes multilingual support, structured content, SEO metadata and integrations for Firebase and Cloudinary. This website is not yet in use.",
+  "technologies": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Cloudinary",
+    "HTML",
+    "CSS"
+  ],
+  "image": "/Mockuuups Free Clean desk with Dell display mockup00.jpeg",
+  "images": [
+    "/Mockuuups Free Clean desk with Dell display mockup00.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup11.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup22.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup33.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup4.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup5.jpeg",
+    "/Mockuuups Free Clean desk with Dell display mockup6.jpeg",
+    "/multiple_devices.png"
+  ],
+  "liveUrl": "",
+  "repoUrl": "https://github.com/HugNil/Bowling-Kristianstad",
+  "features": [
+    "Responsive Design",
+    "Multilingual Support",
+    "Pricing Page",
+    "Opening Hours Page",
+    "Birthday Party Page",
+    "Event & Food Page",
+    "Contact Information",
+    "Embedded Google Maps",
+    "SEO Metadata",
+    "Open Graph Metadata",
+    "Firebase Firestore Integration",
+    "Cloudinary Image Support"
+  ],
+  "contributors": [
+    "Hugo Nilsson"
+  ],
+  "references": [
+    {
+      "label": "Mockuuups Studio",
+      "url": "https://mockuuups.studio",
+      "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+      "note": "Mockup attribution required by the free personal license."
+    }
+  ]
+},
+  {
     "id": "interactivehouse",
     "title": "Interactive House",
     "description": "A multiplatform smart-home simulation for monitoring and controlling devices in an Arduino-based house model.",
