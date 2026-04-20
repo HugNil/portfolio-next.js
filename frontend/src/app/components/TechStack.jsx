@@ -48,6 +48,15 @@ export default function TechStack() {
           </div>
         ))}
       </div>
+
+      <a
+        href="https://devicon.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.iconCredit}
+      >
+        Icons by Devicon
+      </a>
     </section>
   );
 };

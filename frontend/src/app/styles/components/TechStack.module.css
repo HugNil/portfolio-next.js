@@ -147,6 +147,30 @@
   font-weight: 800;
 }
 
+.iconCredit {
+  width: fit-content;
+  align-self: flex-start;
+  margin-top: -0.25rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.iconCredit:hover,
+.iconCredit:focus-visible {
+  border-color: rgba(205, 230, 183, 0.55);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  outline: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -237,6 +261,10 @@
 
   .techName {
     font-size: 0.76rem;
+  }
+
+  .iconCredit {
+    align-self: center;
   }
 }
 
