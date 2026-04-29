@@ -101,48 +101,58 @@
   ]
   },
   {
-    "id": "interactivehouse",
-    "title": "Interactive House",
-    "description": "A multiplatform smart-home simulation for monitoring and controlling devices in an Arduino-based house model.",
-    "longDescription": "Interactive House is a multiplatform smart-home simulation developed as part of the Software Engineering course at Kristianstad University. The system allows users to monitor and control devices such as lights and fans in an Arduino-based house model through web and mobile interfaces. My contribution was within the server group, where I worked on the central backend responsible for device registration, state management, command handling, authentication, and communication between user interfaces and connected devices.",
-    "technologies": [
-      "Python",
-      "FastAPI",
-      "Firebase Realtime Database",
-      "TypeScript",
-      "Kotlin",
-      "Android",
-      "Arduino"
-    ],
-    "image": "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface.webp",
-    "images": [
-      "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface.webp",
-      "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface1.webp",
-      "/optimized/56c77551-e571-431f-b051-ae11499a6efd.webp"
-    ],
-    "liveUrl": "",
-    "repoUrl": "https://github.com/interactive-house-hkr/interactive-house",
-    "features": [
-      "Device registration and state management",
-      "Command handling between UI and devices",
-      "Heartbeat-based online/offline detection",
-      "REST API for web and mobile clients",
-      "Authentication support"
-    ],
-    "contributors": [
-      "Hugo Nilsson",
-      "Jacob Hellgren",
-      "Nicholas Malm",
-      "Ian Onamu"
-    ],
-    "references": [
-      {
-        "label": "Mockuuups Studio",
-        "url": "https://mockuuups.studio",
-        "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
-        "note": "Mockup attribution required by the free personal license."
-      }
-    ]
+  "id": "teamplanner",
+  "title": "Team Planner",
+  "description": "A private absence list and team planning tool for bowling clubs.",
+  "longDescription": "Team Planner is a web application built for bowling clubs that need a simple way for members to report when they cannot play, without requiring member accounts. Members access the club page through a private link or QR code, select their name, and mark unavailable play days. Admins can manage players and teams, view absence lists, sync matches from Swebowl, and use a TeamPlanner view to build lineups with player slots, reserves, coaches, and copyable team sheets. The project uses a PostgreSQL database and role-based admin access.",
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "PostgreSQL",
+    "NextAuth",
+    "Tailwind CSS",
+    "Vercel",
+    "Neon"
+  ],
+  "image": "/optimized/main1.webp",
+  "images": [
+    "/optimized/main1.webp",
+    "/optimized/main2.webp",
+    "/optimized/admin1.webp",
+    "/optimized/admin2.webp",
+    "/optimized/admin3.webp"
+  ],
+  "liveUrl": "",
+  "repoUrl": "https://github.com/HugNil/Team-Planner",
+  "features": [
+    "Private Club Links",
+    "QR Code Friendly Access",
+    "No Member Login Required",
+    "Admin Authentication",
+    "Role-Based Club Access",
+    "Player Management",
+    "Team Management",
+    "Absence Registration by Play Day",
+    "Weekend Round Grouping",
+    "Absence Deadline Handling",
+    "Swebowl Match Sync",
+    "Mobile-Friendly TeamPlanner",
+    "Drag and Tap Player Assignment",
+    "Lineup Copy Export",
+    "Coach and Reserve Support"
+  ],
+  "contributors": [
+    "Hugo Nilsson"
+  ],
+  "references": [
+    {
+      "label": "Mockuuups Studio",
+      "url": "https://mockuuups.studio",
+      "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+      "note": "Mockup attribution required by the free personal license."
+    }
+  ]
   },
   {
     "id": "house18",
@@ -229,58 +239,48 @@
     ]
   },
   {
-  "id": "teamplanner",
-  "title": "Team Planner",
-  "description": "A private absence list and team planning tool for bowling clubs.",
-  "longDescription": "Team Planner is a web application built for bowling clubs that need a simple way for members to report when they cannot play, without requiring member accounts. Members access the club page through a private link or QR code, select their name, and mark unavailable play days. Admins can manage players and teams, view absence lists, sync matches from Swebowl, and use a TeamPlanner view to build lineups with player slots, reserves, coaches, and copyable team sheets. The project uses a PostgreSQL database and role-based admin access.",
-  "technologies": [
-    "Next.js",
-    "TypeScript",
-    "Prisma",
-    "PostgreSQL",
-    "NextAuth",
-    "Tailwind CSS",
-    "Vercel",
-    "Neon"
-  ],
-  "image": "/optimized/main1.webp",
-  "images": [
-    "/optimized/main1.webp",
-    "/optimized/main2.webp",
-    "/optimized/admin1.webp",
-    "/optimized/admin2.webp",
-    "/optimized/admin3.webp"
-  ],
-  "liveUrl": "",
-  "repoUrl": "https://github.com/HugNil/Team-Planner",
-  "features": [
-    "Private Club Links",
-    "QR Code Friendly Access",
-    "No Member Login Required",
-    "Admin Authentication",
-    "Role-Based Club Access",
-    "Player Management",
-    "Team Management",
-    "Absence Registration by Play Day",
-    "Weekend Round Grouping",
-    "Absence Deadline Handling",
-    "Swebowl Match Sync",
-    "Mobile-Friendly TeamPlanner",
-    "Drag and Tap Player Assignment",
-    "Lineup Copy Export",
-    "Coach and Reserve Support"
-  ],
-  "contributors": [
-    "Hugo Nilsson"
-  ],
-  "references": [
-    {
-      "label": "Mockuuups Studio",
-      "url": "https://mockuuups.studio",
-      "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
-      "note": "Mockup attribution required by the free personal license."
-    }
-  ]
+    "id": "interactivehouse",
+    "title": "Interactive House",
+    "description": "A multiplatform smart-home simulation for monitoring and controlling devices in an Arduino-based house model.",
+    "longDescription": "Interactive House is a multiplatform smart-home simulation developed as part of the Software Engineering course at Kristianstad University. The system allows users to monitor and control devices such as lights and fans in an Arduino-based house model through web and mobile interfaces. My contribution was within the server group, where I worked on the central backend responsible for device registration, state management, command handling, authentication, and communication between user interfaces and connected devices.",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Firebase Realtime Database",
+      "TypeScript",
+      "Kotlin",
+      "Android",
+      "Arduino"
+    ],
+    "image": "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface.webp",
+    "images": [
+      "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface.webp",
+      "/optimized/mockuuups-free-ipad-pro-mockup-on-textured-fabric-and-wooden-surface1.webp",
+      "/optimized/56c77551-e571-431f-b051-ae11499a6efd.webp"
+    ],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/interactive-house-hkr/interactive-house",
+    "features": [
+      "Device registration and state management",
+      "Command handling between UI and devices",
+      "Heartbeat-based online/offline detection",
+      "REST API for web and mobile clients",
+      "Authentication support"
+    ],
+    "contributors": [
+      "Hugo Nilsson",
+      "Jacob Hellgren",
+      "Nicholas Malm",
+      "Ian Onamu"
+    ],
+    "references": [
+      {
+        "label": "Mockuuups Studio",
+        "url": "https://mockuuups.studio",
+        "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+        "note": "Mockup attribution required by the free personal license."
+      }
+    ]
   },
   {
     "id": "userscope",
