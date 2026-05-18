@@ -1,0 +1,102 @@
+.snake {
+  position: fixed;
+  top: 0;
+  right: 1.15rem;
+  z-index: 20;
+  width: 86px;
+  height: 100svh;
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.shadowPath,
+.mainPath {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.shadowPath {
+  stroke: rgba(5, 10, 7, 0.42);
+  stroke-width: 12;
+}
+
+.mainPath {
+  stroke: rgba(216, 239, 190, 0.34);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.node {
+  position: absolute;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  min-height: 30px;
+  padding: 0.28rem 0.5rem;
+  border: 1px solid rgba(216, 239, 190, 0.28);
+  border-radius: 999px;
+  background: rgba(23, 32, 19, 0.78);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+  pointer-events: auto;
+  transition: transform 0.22s ease, border-color 0.22s ease, background-color 0.22s ease;
+}
+
+.node:hover,
+.node:focus-visible {
+  border-color: rgba(216, 239, 190, 0.72);
+  background: rgba(38, 55, 31, 0.9);
+  transform: translate(-50%, -50%) scale(1.04);
+  outline: none;
+}
+
+.nodeLeft {
+  margin-left: -0.35rem;
+}
+
+.nodeRight {
+  margin-left: 0.35rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: #d8efbe;
+  box-shadow: 0 0 18px rgba(216, 239, 190, 0.58);
+}
+
+.label {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .snake {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .node {
+    transition: none;
+  }
+}

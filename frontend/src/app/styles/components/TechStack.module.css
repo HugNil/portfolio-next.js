@@ -8,6 +8,7 @@
 }
 
 .sectionHeader {
+  width: 100%;
   display: grid;
   gap: 0.75rem;
   align-self: flex-start;
@@ -58,6 +59,73 @@
   transform: translateY(-4px);
   border-color: rgba(205, 230, 183, 0.55);
   background: rgba(255, 255, 255, 0.1);
+}
+
+.learningStrip {
+  width: calc((100% - 4rem) / 5);
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(205, 230, 183, 0.22);
+  border-radius: 8px;
+  background: rgba(205, 230, 183, 0.08);
+  box-shadow: 0 18px 42px rgba(5, 10, 7, 0.18);
+}
+
+.learningItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.learningLabel {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.learningLabel span {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+.learningItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 42px;
+  padding: 0.48rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.24s ease, background-color 0.24s ease;
+}
+
+.learningItem:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.learningImg {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
 }
 
 .categoryTitle {
@@ -139,7 +207,8 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-.techTooltip p {
+.techTooltip p,
+.techTooltip span {
   margin: 0;
   padding: 0;
   color: #ffffff !important;
@@ -183,6 +252,10 @@
 }
 
 @media (max-width: 1400px) {
+  .learningStrip {
+    width: calc((100% - 2rem) / 3);
+  }
+
   .stack {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -201,6 +274,10 @@
 }
 
 @media (max-width: 768px) {
+  .learningStrip {
+    width: calc((100% - 1rem) / 2);
+  }
+
   .stack {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -249,6 +326,10 @@
     font-size: 0.98rem;
   }
 
+  .learningStrip {
+    align-items: center;
+  }
+
   .stackCard {
     min-height: 82px;
     padding: 0.6rem;
@@ -270,12 +351,14 @@
 
 @media (hover: none) and (pointer: coarse) {
   .categoryCard,
+  .learningItem,
   .stackCard,
   .techImg {
     transition: none;
   }
 
   .categoryCard:hover,
+  .learningItem:hover,
   .stackCard:hover,
   .stackCard:hover .techImg {
     transform: none;
@@ -287,6 +370,10 @@
 }
 
 @media (max-width: 400px) {
+  .learningStrip {
+    width: 100%;
+  }
+
   .stackCardSection {
     grid-template-columns: 1fr;
   }

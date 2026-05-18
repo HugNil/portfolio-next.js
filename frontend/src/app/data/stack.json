@@ -3,22 +3,21 @@
     "category": "Languages",
     "tech": [
       { "name": "JavaScript", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" },
-      { "name": "TypeScript", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
       { "name": "Python", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" },
       { "name": "Java", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" },
       { "name": "Kotlin", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" },
-      { "name": "Sql", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" }
+      { "name": "SQL", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" }
     ]
   },
   {
     "category": "Frontend",
     "tech": [
+      { "name": "TypeScript", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" },
       { "name": "HTML", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" },
       { "name": "CSS", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" },
       { "name": "React", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" },
-      { "name": "React Native", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" },
-      { "name": "Vitejs", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" },
-      { "name": "Next.js", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" }
+      { "name": "Next.js", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" },
+      { "name": "Vite", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" }
     ]
   },
   {
@@ -27,7 +26,6 @@
       { "name": "Node.js", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
       { "name": "Express", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" },
       { "name": "FastAPI", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" },
-      { "name": "Docker", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
       { "name": "SQLAlchemy", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg" },
       { "name": "Swagger", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg" }
     ]
@@ -48,10 +46,18 @@
     "tech": [
       { "name": "Git", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
       { "name": "Github", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
-      { "name": "Npm", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" },
+      { "name": "Docker", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" },
+      { "name": "npm", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg" },
       { "name": "Postman", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
       { "name": "VS Code", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" },
+      { "name": "NeoVim", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg" },
       { "name": "Hadoop", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" }
+    ]
+  },
+  {
+    "category": "Currently Learning",
+    "tech": [
+      { "name": "Rust", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" }
     ]
   }
 ]
