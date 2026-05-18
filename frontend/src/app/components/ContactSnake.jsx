@@ -1,17 +1,55 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import styles from '../styles/components/ContactSnake.module.css';
 
 const contactNodes = [
   { label: 'Email', href: 'mailto:youremail@example.com', top: '18%' },
   { label: 'GitHub', href: 'https://github.com/hugnil', top: '37%' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/hugo-nilsson-80b33621b/?locale=sv_SE', top: '58%' },
-  { label: 'CV', href: '/assets/Hugo Nilsson CV.pdf', top: '78%' }
+  { label: 'Resumé', href: '/assets/Hugo Nilsson CV.pdf', top: '73%' }
 ];
 
 export default function ContactSnake() {
+  const snakeRef = useRef(null);
+
+  useEffect(() => {
+    const snake = snakeRef.current;
+    if (!snake || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return undefined;
+    }
+
+    let frameId = null;
+
+    const updateScrollMotion = () => {
+      frameId = null;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+
+      snake.style.setProperty('--snake-flow', `${progress * -100}px`);
+    };
+
+    const requestUpdate = () => {
+      if (frameId === null) {
+        frameId = window.requestAnimationFrame(updateScrollMotion);
+      }
+    };
+
+    updateScrollMotion();
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+
+    return () => {
+      if (frameId !== null) {
+        window.cancelAnimationFrame(frameId);
+      }
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
+    };
+  }, []);
+
   return (
-    <nav className={styles.snake} aria-label="Quick contact links">
+    <nav ref={snakeRef} className={styles.snake} aria-label="Quick contact links">
       <svg className={styles.line} viewBox="0 0 72 720" preserveAspectRatio="none" aria-hidden="true">
         <path
           className={styles.shadowPath}

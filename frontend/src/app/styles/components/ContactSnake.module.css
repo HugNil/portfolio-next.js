@@ -1,11 +1,14 @@
 .snake {
+  --snake-flow: 0px;
   position: fixed;
-  top: 0;
+  top: -10svh;
   right: 1.15rem;
   z-index: 20;
   width: 86px;
-  height: 100svh;
+  height: 140svh;
   pointer-events: none;
+  transform: translate3d(0, var(--snake-flow), 0);
+  will-change: transform;
 }
 
 .line {
@@ -96,6 +99,11 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .snake {
+    transform: none;
+    will-change: auto;
+  }
+
   .node {
     transition: none;
   }

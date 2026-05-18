@@ -62,7 +62,7 @@ export default function Hero() {
           <p className={styles.kicker}>Based in Skåne, Sweden</p>
           <div className={styles.buttonContainer}>
             <a href="/assets/Hugo Nilsson CV.pdf" onClick={handleDownloadCV}>
-              <button className="button-primary" style={{minWidth: '8rem'}}>RESUME</button>
+              <button className="button-primary" style={{minWidth: '8rem'}}>RESUMÉ</button>
             </a>
             <Link href="#projects">
               <button className="button-primary" style={{minWidth: '8rem'}}>PROJECTS</button>
