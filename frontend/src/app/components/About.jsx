@@ -6,7 +6,7 @@ import TechStack from './TechStack';
 export default function About() {
   return (
     <section className={`section ${styles.aboutSection}`} id='about'>
-      <div className='container'>
+      <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <span className={styles.eyebrow}>About me</span>
           <h1 className={styles.heading}>Building useful things with care.</h1>
@@ -21,7 +21,7 @@ export default function About() {
             <Image src={profilePic} alt="Profile picture" className={styles.img} width={300} height={300} />
           </div>
         </div>
-        <section>
+        <section className={styles.stackWrapper}>
           <TechStack />
         </section>
       </div>
