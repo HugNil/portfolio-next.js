@@ -62,7 +62,7 @@
 }
 
 .learningStrip {
-  width: calc((100% - 4rem) / 5);
+  width: 100%;
   max-width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -79,6 +79,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
+  min-width: 0;
 }
 
 .learningLabel {
@@ -253,7 +254,7 @@
 
 @media (max-width: 1400px) {
   .learningStrip {
-    width: calc((100% - 2rem) / 3);
+    width: 100%;
   }
 
   .stack {
@@ -275,7 +276,7 @@
 
 @media (max-width: 768px) {
   .learningStrip {
-    width: calc((100% - 1rem) / 2);
+    width: 100%;
   }
 
   .stack {
@@ -327,7 +328,8 @@
   }
 
   .learningStrip {
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .stackCard {
@@ -370,10 +372,6 @@
 }
 
 @media (max-width: 400px) {
-  .learningStrip {
-    width: 100%;
-  }
-
   .stackCardSection {
     grid-template-columns: 1fr;
   }

@@ -56,7 +56,8 @@
   {
     "category": "Currently Learning",
     "tech": [
-      { "name": "Rust", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" }
+      { "name": "Rust", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" },
+      { "name": "Linux", "img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" }
     ]
   }
 ]
