@@ -56,7 +56,7 @@ export default function Hero() {
               DEVELOPMENT
             </h1>
             <h1 id='heading3' className={`${styles.heading} ${styles.heading3}`}>
-              STUDENT
+              GRADUATE
             </h1>
           </div>
           <p className={styles.kicker}>Based in Skåne, Sweden</p>

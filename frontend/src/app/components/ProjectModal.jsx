@@ -183,6 +183,16 @@ export default function ProjectModal({ project, onClose }) {
                   GitHub
                 </a>
               )}
+              {project.documentUrl && (
+                <a
+                  href={project.documentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.linkButtonSecondary}
+                >
+                  Read thesis
+                </a>
+              )}
             </div>
 
             {references.length > 0 && (

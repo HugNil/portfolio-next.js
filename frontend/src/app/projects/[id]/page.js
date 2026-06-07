@@ -4,8 +4,8 @@ import path from 'path';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProjectDetail({ params }) {
-  const { id } = params;
+export default async function ProjectDetail({ params }) {
+  const { id } = await params;
   const filePath = path.join(process.cwd(), 'src/app/data/projects.json');
   const jsonData = fs.readFileSync(filePath, 'utf8');
   const projects = JSON.parse(jsonData);
@@ -56,6 +56,8 @@ export default function ProjectDetail({ params }) {
         <Image
           src={project.image}
           alt={project.title}
+          width={1200}
+          height={800}
           style={{
             width: '100%',
             maxHeight: '400px',
@@ -108,6 +110,16 @@ export default function ProjectDetail({ params }) {
               className="button button-secondary"
             >
               GitHub
+            </Link>
+          )}
+          {project.documentUrl && (
+            <Link
+              href={project.documentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button-secondary"
+            >
+              Read thesis
             </Link>
           )}
         </div>

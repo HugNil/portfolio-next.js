@@ -14,7 +14,7 @@ export default function About() {
         <div className={styles.contentContainer}>
           <div className={styles.textContainer}>
             <p className={styles.paragraph}>
-              I'm a Computer Science student at Kristianstad University with a strong passion for technology. I enjoy solving problems, exploring new tools, and learning how things work under the hood. What drives me most is seeing my projects come to life, turning ideas into functional solutions that people can actually use.
+              I hold a Bachelor's degree in Computer Science from Kristianstad University and have a strong passion for technology. I enjoy solving problems, exploring new tools, and learning how things work under the hood. What drives me most is seeing my projects come to life, turning ideas into functional solutions that people can actually use.
             </p>
           </div>
           <div className={styles.imageContainer}>

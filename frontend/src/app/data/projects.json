@@ -48,111 +48,111 @@
     ]
   },
   {
-  "id": "bowlingkristianstad",
-  "title": "Bowling Kristianstad",
-  "description": "Website for a local bowling alley in Kristianstad",
-  "longDescription": "This web application was built for Bowling Kristianstad to give the local bowling alley a modern, responsive website with clearer information about pricing, opening hours, events, birthday parties and contact details. The website includes multilingual support, structured content, SEO metadata and integrations for Firebase and Cloudinary. This website is not yet in use.",
-  "technologies": [
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Cloudinary",
-    "HTML",
-    "CSS"
-  ],
-  "image": "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup00.webp",
-  "images": [
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup00.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup11.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup22.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup33.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup4.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup5.webp",
-    "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup6.webp",
-    "/optimized/multiple-devices.webp"
-  ],
-  "liveUrl": "",
-  "repoUrl": "https://github.com/HugNil/Bowling-Kristianstad",
-  "features": [
-    "Responsive Design",
-    "Multilingual Support",
-    "Pricing Page",
-    "Opening Hours Page",
-    "Birthday Party Page",
-    "Event & Food Page",
-    "Contact Information",
-    "Embedded Google Maps",
-    "SEO Metadata",
-    "Open Graph Metadata",
-    "Firebase Firestore Integration",
-    "Cloudinary Image Support"
-  ],
-  "contributors": [
-    "Hugo Nilsson"
-  ],
-  "references": [
-    {
-      "label": "Mockuuups Studio",
-      "url": "https://mockuuups.studio",
-      "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
-      "note": "Mockup attribution required by the free personal license."
-    }
-  ]
+    "id": "bowlingkristianstad",
+    "title": "Bowling Kristianstad",
+    "description": "Website for a local bowling alley in Kristianstad",
+    "longDescription": "This web application was built for Bowling Kristianstad to give the local bowling alley a modern, responsive website with clearer information about pricing, opening hours, events, birthday parties and contact details. The website includes multilingual support, structured content, SEO metadata and integrations for Firebase and Cloudinary. This website is not yet in use.",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Cloudinary",
+      "HTML",
+      "CSS"
+    ],
+    "image": "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup00.webp",
+    "images": [
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup00.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup11.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup22.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup33.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup4.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup5.webp",
+      "/optimized/mockuuups-free-clean-desk-with-dell-display-mockup6.webp",
+      "/optimized/multiple-devices.webp"
+    ],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/HugNil/Bowling-Kristianstad",
+    "features": [
+      "Responsive Design",
+      "Multilingual Support",
+      "Pricing Page",
+      "Opening Hours Page",
+      "Birthday Party Page",
+      "Event & Food Page",
+      "Contact Information",
+      "Embedded Google Maps",
+      "SEO Metadata",
+      "Open Graph Metadata",
+      "Firebase Firestore Integration",
+      "Cloudinary Image Support"
+    ],
+    "contributors": [
+      "Hugo Nilsson"
+    ],
+    "references": [
+      {
+        "label": "Mockuuups Studio",
+        "url": "https://mockuuups.studio",
+        "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+        "note": "Mockup attribution required by the free personal license."
+      }
+    ]
   },
   {
-  "id": "teamplanner",
-  "title": "Team Planner",
-  "description": "A private absence list and team planning tool for bowling clubs.",
-  "longDescription": "Team Planner is a web application built for bowling clubs that need a simple way for members to report when they cannot play, without requiring member accounts. Members access the club page through a private link or QR code, select their name, and mark unavailable play days. Admins can manage players and teams, view absence lists, sync matches from Swebowl, and use a TeamPlanner view to build lineups with player slots, reserves, coaches, and copyable team sheets. The project uses a PostgreSQL database and role-based admin access.",
-  "technologies": [
-    "Next.js",
-    "TypeScript",
-    "Prisma",
-    "PostgreSQL",
-    "NextAuth",
-    "Tailwind CSS",
-    "Vercel",
-    "Neon"
-  ],
-  "image": "/optimized/main1.webp",
-  "images": [
-    "/optimized/main1.webp",
-    "/optimized/main2.webp",
-    "/optimized/admin1.webp",
-    "/optimized/admin2.webp",
-    "/optimized/admin3.webp"
-  ],
-  "liveUrl": "",
-  "repoUrl": "https://github.com/HugNil/Team-Planner",
-  "features": [
-    "Private Club Links",
-    "QR Code Friendly Access",
-    "No Member Login Required",
-    "Admin Authentication",
-    "Role-Based Club Access",
-    "Player Management",
-    "Team Management",
-    "Absence Registration by Play Day",
-    "Weekend Round Grouping",
-    "Absence Deadline Handling",
-    "Swebowl Match Sync",
-    "Mobile-Friendly TeamPlanner",
-    "Drag and Tap Player Assignment",
-    "Lineup Copy Export",
-    "Coach and Reserve Support"
-  ],
-  "contributors": [
-    "Hugo Nilsson"
-  ],
-  "references": [
-    {
-      "label": "Mockuuups Studio",
-      "url": "https://mockuuups.studio",
-      "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
-      "note": "Mockup attribution required by the free personal license."
-    }
-  ]
+    "id": "teamplanner",
+    "title": "Team Planner",
+    "description": "A private absence list and team planning tool for bowling clubs.",
+    "longDescription": "Team Planner is a web application built for bowling clubs that need a simple way for members to report when they cannot play, without requiring member accounts. Members access the club page through a private link or QR code, select their name, and mark unavailable play days. Admins can manage players and teams, view absence lists, sync matches from Swebowl, and use a TeamPlanner view to build lineups with player slots, reserves, coaches, and copyable team sheets. The project uses a PostgreSQL database and role-based admin access.",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Prisma",
+      "PostgreSQL",
+      "NextAuth",
+      "Tailwind CSS",
+      "Vercel",
+      "Neon"
+    ],
+    "image": "/optimized/main1.webp",
+    "images": [
+      "/optimized/main1.webp",
+      "/optimized/main2.webp",
+      "/optimized/admin1.webp",
+      "/optimized/admin2.webp",
+      "/optimized/admin3.webp"
+    ],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/HugNil/Team-Planner",
+    "features": [
+      "Private Club Links",
+      "QR Code Friendly Access",
+      "No Member Login Required",
+      "Admin Authentication",
+      "Role-Based Club Access",
+      "Player Management",
+      "Team Management",
+      "Absence Registration by Play Day",
+      "Weekend Round Grouping",
+      "Absence Deadline Handling",
+      "Swebowl Match Sync",
+      "Mobile-Friendly TeamPlanner",
+      "Drag and Tap Player Assignment",
+      "Lineup Copy Export",
+      "Coach and Reserve Support"
+    ],
+    "contributors": [
+      "Hugo Nilsson"
+    ],
+    "references": [
+      {
+        "label": "Mockuuups Studio",
+        "url": "https://mockuuups.studio",
+        "attribution": "Mockup by Mockuuups Studio - https://mockuuups.studio",
+        "note": "Mockup attribution required by the free personal license."
+      }
+    ]
   },
   {
     "id": "house18",

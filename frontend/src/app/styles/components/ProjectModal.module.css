@@ -152,8 +152,9 @@
   margin: 0 0 0.9rem 0;
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
-  background: #e7f0df;
-  color: #31422f;
+  border: 1px solid rgba(216, 239, 190, 0.5);
+  background: #172013;
+  color: #d8efbe;
   font-size: 0.78rem;
   font-weight: 800;
   line-height: 1;
