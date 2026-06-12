@@ -11,8 +11,8 @@ export default function HomePage() {
     <>
       <ContactSnake />
       <Hero />
-      <Thesis />
       <Projects />
+      <Thesis />
       <About />
       <Contact />
     </>
