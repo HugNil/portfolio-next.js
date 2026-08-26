@@ -8,12 +8,13 @@ export default function Hero() {
   const images = [
     '/optimized/assets-img20240703130257-edit-edit-edit.webp',
     '/optimized/assets-img-20190215-162733.webp',
-    '/optimized/assets-img-20191122-165346.webp',
+    '/optimized/hero-snow-portrait.webp',
     '/optimized/assets-img-20220629-205602.webp',
     '/optimized/assets-img-20230617-124039.webp',
     '/optimized/assets-img-20190212-150838.webp',
     '/optimized/assets-img20240703125715.webp',
-    '/optimized/assets-img-20230618-154142.webp'
+    '/optimized/assets-img-20230618-154142.webp',
+    '/optimized/hero-mountain-ridge.webp'
   ];
 
   const handleDownloadCV = (e) => {
